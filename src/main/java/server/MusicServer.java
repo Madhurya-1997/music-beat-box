@@ -52,6 +52,7 @@ public class MusicServer {
 
         try {
             ServerSocket serverSocket = new ServerSocket(4242);
+            System.out.println("Music server started at port 4242");
 
             while (true) {
                 Socket clientSocket = serverSocket.accept();
